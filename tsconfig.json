@@ -12,10 +12,13 @@
     "moduleResolution": "node",
     // Для абсолютного импорта.
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // esModuleInterop позволяет работать с пакетами, которые используют common js как с обычными пакета с помощью import (require() module.export) = common js
     "esModuleInterop": true,
     // Если какая-либо библиотека не имеет default import, лоадеры вроде ts-loader или babel-loader автоматически создают их.
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
   },
   "ts-node": {
     "compilerOptions": {
